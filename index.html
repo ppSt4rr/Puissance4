@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Pouissance4</title>
+</head>
+<body>
+    
+    <div id="OTK"></div>
+    <div id="count"></div>
+    <button id="restart">Restart</button>
+    <button id="undo"">Undo</button>
+
+    <script type="module">
+        import {P4} from "./js/p4.js";
+
+        $('#game').ready(function(){
+    const p4 = new P4('#game', {
+        ROW: 7,
+        COL: 6,
+        P1: 'StRr',
+        P2: 'Bal',
+        colorone: 'red',
+        colortwo: 'yellow'
+    });
+});
+    </script>
+</body>
+</html>
